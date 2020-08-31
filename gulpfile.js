@@ -39,7 +39,7 @@ gulp.task('connect', function () {
 })
 
 gulp.task('watch', function () {
-    gulp.watch(['src/sass/**/*.pug'], gulp.series('sass'))
+    gulp.watch(['src/sass/**/*.sass'], gulp.series('sass'))
     gulp.watch(['src/views/**/*.pug'], gulp.series('pug'))
     gulp.watch(['src/javascript/**/*.js'], gulp.series('babel'))
 })
